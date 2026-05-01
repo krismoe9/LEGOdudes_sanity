@@ -38,6 +38,11 @@ const products = {
             type: "image",
         },
         {
+            name: "description",
+            title: "Beskrivelse",
+            type: "text"
+        },
+        {
             name: "productcategory",
             title: "Kategori",
             type: "reference",

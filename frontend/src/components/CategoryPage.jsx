@@ -16,7 +16,7 @@ export default function categoryPage() {
         }
 
         fetchCategory(parameters.slug)
-    }, [parameters])
+    }, [parameters])   
 
     console.log(parameters)
     console.log("Category", category)

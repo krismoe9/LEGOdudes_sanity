@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default  function ProductCard({p, setCart}){
       /*
         handleClick kjøres når brukeren klikker på
@@ -68,8 +70,7 @@ export default  function ProductCard({p, setCart}){
     return (
       <article className="product-card">
           <img src={p.imageURL ? p.imageURL : "https://placehold.co/600x800?text=Bilde+kommer" } alt={p.productname} />
-          <a href="#">{p.category}</a>
-          <h3>{p.productname}</h3>
+          <Link to={`/produkt/${p.slug.current}`}><h3>{p.productname}</h3></Link >
           <p>Kr. {p.price},-</p>
           <button onClick={handleClick}>Legg til handlevogn</button>
       </article>
