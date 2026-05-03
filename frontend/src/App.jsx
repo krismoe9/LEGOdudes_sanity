@@ -10,7 +10,7 @@ import CategoryTitle from './components/CategoryTitle'
 import Layout from './components/Layout'
 import { Routes, Route } from 'react-router-dom'
 import CategoryPage from './components/CategoryPage'
-import productPage from './components/ProductPage'
+import ProductPage from './components/ProductPage'
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -67,7 +67,7 @@ function App() {
       <Routes>
         <Route index element={<Page />} />
         <Route path="/kategori/:slug" element={<CategoryPage /> } />
-        <Route path="/produkt/:slug" element={<productPage />} />
+        <Route path="/produkt/:slug" element={<ProductPage />} />
 
       </Routes>
     </Layout>
